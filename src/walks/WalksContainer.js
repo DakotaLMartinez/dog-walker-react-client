@@ -12,7 +12,7 @@ function WalksContainer() {
   const [walks, setWalks] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/walks`)
+    fetch(`${process.env.REACT_APP_API_URL}/walks?include_dogs`)
       .then(res => res.json())
       .then(walks => {
         setWalks(walks)

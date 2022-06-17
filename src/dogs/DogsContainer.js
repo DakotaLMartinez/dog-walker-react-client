@@ -12,7 +12,7 @@ function DogsContainer() {
   const [dogs, setDogs] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/dogs`, {
+    fetch(`${process.env.REACT_APP_API_URL}/dogs?include_dog_walks`, {
       headers: { Accept: 'application/json' }
     })
       .then(res => res.json())

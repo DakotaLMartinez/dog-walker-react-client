@@ -1,5 +1,7 @@
 # Dog Walker Application
 
+This application is designed to be run as the client for a local sinatra web server running on `http://localhost:9292`
+
 ## Key Features
 
 - View List of Dogs
